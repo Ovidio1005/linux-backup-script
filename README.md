@@ -4,13 +4,13 @@ This is a bash script I created to automate backups of my PC and home server wit
 
 ## Table of contents
 
-- [How it works](#How it works)
+- [How it works](#How-it-works)
 - [Usage](#Usage)
 - [Configuration](#Configuration)
-	- [Further customisation](#Further customisation)
-- [Command line options](#Command line options)
-	- [`-i` or `--interactive`](#`-i` or `--interactive`)
-	- [`-v` or `--verbose`](#`-v` or `--verbose`)
+	- [Further customisation](#Further-customisation)
+- [Command line options](#Command-line-options)
+	- [`-i` or `--interactive`](#`-i`-or-`--interactive`)
+	- [`-v` or `--verbose`](#`-v`-or-`--verbose`)
 	- [`--dry-run`](#`--dry-run`)
 	- [`--skip-borg`](#`--skip-borg`)
 	- [`--skip-rclone`](#`--skip-rclone`)
@@ -18,9 +18,9 @@ This is a bash script I created to automate backups of my PC and home server wit
 	- [`--ignore-errors`](#`--ignore-errors`)
 	- [`--ignore-timestamp`](#`--ignore-timestamp`)
 	- [`--ignore-lock`](#`--ignore-lock`)
-	- [`--conf-dir [PATH]`](#`--conf-dir [PATH]`|`--conf-dir [PATH]`)
+	- [`--conf-dir [PATH]`](#`--conf-dir-[PATH]`)
 - [Requirements](#Requirements)
-- [See also](#See also)
+- [See also](#See-also)
 
 ## How it works
 
@@ -39,7 +39,7 @@ The script is meant to be ran on a schedule through `cron`, a `systemd` timer, o
 - Syncs the repository with cloud storage with `rclone`
 
 > [!note]
-> The script exports installed packages with `apt-mark` and `dpkg-query`. If you use a different package manager, your list of packages won't be exported unless you edit the script yourself (see [Further customisation](#Further customisation)).
+> The script exports installed packages with `apt-mark` and `dpkg-query`. If you use a different package manager, your list of packages won't be exported unless you edit the script yourself (see [Further customisation](#Further-customisation)).
 
 Logs are created in `/backup/logs`. The script prevents simultaneous runs by creating a lock file at `/backup/.lock` and deleting it when finished.
 
