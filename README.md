@@ -9,16 +9,16 @@ This is a bash script I created to automate backups of my PC and home server wit
 - [Configuration](#Configuration)
 	- [Further customisation](#Further-customisation)
 - [Command line options](#Command-line-options)
-	- [`-i` or `--interactive`](#`-i`-or-`--interactive`)
-	- [`-v` or `--verbose`](#`-v`-or-`--verbose`)
-	- [`--dry-run`](#`--dry-run`)
-	- [`--skip-borg`](#`--skip-borg`)
-	- [`--skip-rclone`](#`--skip-rclone`)
-	- [`--skip-packages`](#`--skip-packages`)
-	- [`--ignore-errors`](#`--ignore-errors`)
-	- [`--ignore-timestamp`](#`--ignore-timestamp`)
-	- [`--ignore-lock`](#`--ignore-lock`)
-	- [`--conf-dir [PATH]`](#`--conf-dir-[PATH]`)
+	- [`-i` or `--interactive`](#-i-or---interactive)
+	- [`-v` or `--verbose`](#-v-or---verbose)
+	- [`--dry-run`](#--dry-run)
+	- [`--skip-borg`](#--skip-borg)
+	- [`--skip-rclone`](#--skip-rclone)
+	- [`--skip-packages`](#--skip-packages)
+	- [`--ignore-errors`](#--ignore-errors)
+	- [`--ignore-timestamp`](#--ignore-timestamp)
+	- [`--ignore-lock`](#--ignore-lock)
+	- [`--conf-dir [PATH]`](#--conf-dir-[PATH])
 - [Requirements](#Requirements)
 - [See also](#See-also)
 
@@ -56,12 +56,12 @@ Then, download one of the configurations from the `examples` folder and place it
 
 Finally, set up automation in whichever way you prefer. The `examples` folder contains example crontabs that you can use to set it up through `cron`; just run `crontab -e` and copy-paste the line from the example into your crontab. Note that the provided examples assume the script is stored at `/backup/backup.sh`. You should probably run the script manually and with `--verbose` once before setting up automation, to check that everything works correctly.
 
-> [!info]
+> [!tip]
 > If you want to back up the whole system, you will probably need to run the script as root.
 
 ## Configuration
 
-> [!info]
+> [!note]
 > The following section assumes using the default configuration directory, `/backup`. You can provide a different one with `--conf-dir`.
 
 The script relies on seven configuration files, all stored in `/backup/conf`, with the following names:
