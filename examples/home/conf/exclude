@@ -1,0 +1,23 @@
+# Where the borg repo lives. Without this, it'd try to back up the repo inside itself
+*/backup/repo
+
+# Volatile files
+/.local/state
+
+# All tmp directories
+*/tmp
+
+# Cache directories
+*/[Cc][Aa][Cc][Hh][Ee]
+*/[Cc][Aa][Cc][Hh][Ee]?
+*/.[Cc][Aa][Cc][Hh][Ee]
+*/.[Cc][Aa][Cc][Hh][Ee]?
+
+# Trash and lost&found
+*/lost+found
+*/.Trash-1000
+*/.local/share/Trash
+
+# Binaries
+*/snap
+*/.local/share/flatpak

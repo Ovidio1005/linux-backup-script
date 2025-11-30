@@ -1,0 +1,1 @@
+This configuration is meant as a "data-only" backup of a single user's home directory, and avoids backing up any binaries, libraries and the like; in case of a restore, you will have to re-download all your apps (though the exported list of packages/snaps/etc. should make that easier). Note that you will lose some configuration information, particularly system-wide configuration.

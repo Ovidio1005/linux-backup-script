@@ -1,0 +1,37 @@
+# Volatile system directories/files
+swapfile
+dev
+boot
+run
+tmp
+proc
+sys
+
+# Volatile files
+home/*/.local/state
+
+# All tmp directories
+*/tmp
+
+# Cache directories
+*/[Cc][Aa][Cc][Hh][Ee]
+*/[Cc][Aa][Cc][Hh][Ee]?
+*/.[Cc][Aa][Cc][Hh][Ee]
+*/.[Cc][Aa][Cc][Hh][Ee]?
+
+# Trash and lost&found
+*/lost+found
+*/.Trash-1000
+home/*/.local/share/Trash
+
+# Don't back up other drives
+mnt
+media
+
+# Binaries and source code
+snap
+opt
+var/lib
+usr/lib
+usr/bin
+usr/src

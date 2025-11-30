@@ -1,0 +1,1 @@
+This configuration is meant as a full-system backup, and includes binaries, libraries and the like. This results in a bulkier backup, but in case of a restore you shouldn't lose any configuration information or data, such as stateful docker containers or apps that store their configuration files outside of /etc.

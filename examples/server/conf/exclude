@@ -1,0 +1,28 @@
+# Where the borg repo lives. Without this, it'd try to back up the repo inside itself
+backup/repo
+
+# Volatile system directories/files
+swapfile
+dev
+boot
+run
+tmp
+proc
+sys
+
+# All tmp directories
+*/tmp
+
+# Cache directories
+*/[Cc][Aa][Cc][Hh][Ee]
+*/[Cc][Aa][Cc][Hh][Ee]?
+*/.[Cc][Aa][Cc][Hh][Ee]
+*/.[Cc][Aa][Cc][Hh][Ee]?
+
+# Trash and lost&found
+*/lost+found
+*/.Trash-1000
+
+# Don't back up other drives
+mnt
+media
